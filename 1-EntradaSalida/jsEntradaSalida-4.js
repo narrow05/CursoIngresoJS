@@ -4,6 +4,13 @@
 */
 function mostrar()
 {
+	var nombre;
+	var usuario;
+	nombre=prompt("") 
+	usuario=document.getElementById("elNombre").value=nombre
+
+   
+
 
 }
 
