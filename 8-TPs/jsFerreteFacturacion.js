@@ -9,6 +9,7 @@ function Sumar ()
     var dos
     var tres
     var suma
+    
       uno=document.getElementById("PrecioUno").value;
       dos=document.getElementById("PrecioDos").value;
       tres= document.getElementById("PrecioTres").value;

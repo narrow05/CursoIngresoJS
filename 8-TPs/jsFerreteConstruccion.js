@@ -32,7 +32,8 @@ function Circulo ()
 }
 function Materiales () 
 {
-	var Largo;
+    var Largo;
+    var tres;
     var Ancho; 
     var superficie;
     var bolsadecemetoporm2=2;
@@ -46,6 +47,6 @@ function Materiales ()
     bolsadecalporm2=superficie/bolsadecalporm2;
     
     
-    alert("La superficie total es "+superficie+ " y se necesitan para hacer un conta piso "+bolsadecemetoporm2+ "bolsas de cemento y "+bolsadecalporm2+" bolsas de cal")
+    alert("La superficie total es "+superficie+ " y se necesitan para hacer un conta piso "+bolsadecemetoporm2+ " bolsas de cemento y "+bolsadecalporm2+" bolsas de cal")
 
 }

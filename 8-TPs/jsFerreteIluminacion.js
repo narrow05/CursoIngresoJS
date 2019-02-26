@@ -10,21 +10,69 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var error
-    var lamparas
-     var cantlamp
-     var descuentoA
-     cantlamp=document.getElementById("Cantidad").value;
-     cantlamp=parseInt(cantlamp);
-     
-     error=("0")
-     if(cantlamp>=6){
-         descuentoA=35*cantlamp*0.5
-
-     }
-    else{
-        erro=0
-     error=document.getElementById("precioDescuento").value=error
-    }
-     descuentoA=document.getElementById("precioDescuento").value=descuentoA;
+    var totaliibb=0;
+    var total;
+    var totalfinal;
+    var lamparas=35;
+    var cantlamp;
+    var Marca;
+    cantlamp=document.getElementById("Cantidad").value;
+    Marca=document.getElementById("Marca").value;
+    cantlamp=parseInt(cantlamp);
+        
+        if(cantlamp>=6){
+         total=35*cantlamp*0.5;
+         }
+        else{ }
+         if(cantlamp==5){
+             if(Marca=="ArgentinaLuz"){
+             total=lamparas*cantlamp*0.6;
+            }
+            else {
+            total=lamparas*cantlamp*0.7;
+            }
+        }
+        else{}
+        if(cantlamp==4){
+            if(Marca=="ArgentinaLuz" || Marca== "FelipeLamparas"){
+            total=lamparas*cantlamp*0.75;
+           }
+           else {
+           total=lamparas*cantlamp*0.8;
+           }
+        }
+       else{}
+       if(cantlamp==3){
+            if(Marca=="ArgentinaLuz"){
+            total=lamparas*cantlamp*0.85;
+            }
+            else{}
+            if(Marca== "FelipeLamparas"){
+            total=lamparas*cantlamp*0.90; 
+            }
+            else{}
+            if(Marca=="JeLuz"||Marca=="HazIluminacion" ||Marca=="Osram"){
+                total=lamparas*cantlamp*0.95;
+            }
+            }
+        else{}
+        if(cantlamp<=2 && cantlamp>0){
+            total=lamparas*cantlamp;
+        }
+        else{}
+ if (total>120){
+totaliibb=total*0.10;
+totalfinal=total+totaliibb;
+alert("IIBB usted pago "+totalfinal+" , siendo "+totaliibb+" el impuesto que se pago");
+ }
+else{
 }
+totalfinal=total+totaliibb;     
+console.log(totaliibb);
+    
+ totalfinal=document.getElementById("precioDescuento").value=totalfinal;
+ 
+ 
+ 
+}
+
