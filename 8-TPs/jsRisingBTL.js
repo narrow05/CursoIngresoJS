@@ -9,5 +9,18 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+    var Edad;
+    var Sexo;
+    var EstadoCivil;
+    var Sueldo;
+    var Legajo;
+    var Nacionalidad;
+    Edad=document.getElementById("Edad").value;
+    Sexo=document.getElementById("Sexo").value;
+    EstadoCivil=document.getElementById("EstadoCivil").value;
+    Sueldo=document.getElementById("Sueldo").value;
+    Legajo=document.getElementById("Legajo").value;
+    Nacionalidad=document.getElementById("Nacionalida").value;
+    alert(Edad+""+Sexo+""+EstadoCivil+""+Sueldo+""+Legajo+""+Nacionalidad);
+
 }
