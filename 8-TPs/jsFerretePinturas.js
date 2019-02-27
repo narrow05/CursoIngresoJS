@@ -20,4 +20,5 @@ function CentigradosFahrenheit ()
     Temperatura=parseInt(Temperatura)
     tempfahre=Temperatura+32
     alert(Temperatura+" centígrados son "+tempfahre+ " Fahrenheit ")
+    alert()
 }
